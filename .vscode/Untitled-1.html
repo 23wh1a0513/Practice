@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Agricultural Registration</title>
+  <style>
+.title {
+  text-align: center;
+  font-size: 20px;
+  color: #2e7d32;
+}
+.form-container {
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 15px;
+  border: 1px solid #2e7d32;
+}
+label {
+  display: block;
+  margin-top: 8px;
+}
+input, select, textarea {
+  width: 100%;
+  margin-top: 5px;
+  border: 1px solid #aaa;
+}
+button {
+  margin-top: 10px;
+  background: #2e7d32;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+  </style>
+</head>
+<body>
+  <div class="title">Agricultural Registration Form</div>
+  <div class="form-container">
+    <form>
+      <label>Full Name</label><input type="text" required>
+      <label>Age</label><input type="number" min="18" max="100" required>
+      <label>Type of Farmer</label>
+      <select required><option value="">Select</option><option>Small-scale</option><option>Large-scale</option><option>Tenant Farmer</option><option>Agricultural Laborer</option></select>
+      <label>Gender</label>
+      <input type="radio" name="gender" value="Male">Male
+      <input type="radio" name="gender" value="Female">Female
+      <input type="radio" name="gender" value="Other">Other
+      <label>Crops Grown</label>
+      <input type="checkbox" value="Rice">Rice
+      <input type="checkbox" value="Wheat">Wheat
+      <input type="checkbox" value="Vegetables">Vegetables
+      <input type="checkbox" value="Fruits">Fruits
+      <label>Mobile Number</label><input type="tel" pattern="[0-9]{10}" required>
+      <label>Email (optional)</label><input type="email">
+      <label>Registration Date</label><input type="date">
+      <label>Preferred Visit Time</label><input type="time">
+      <label>Land Size (0–100 acres)</label><input type="range" min="0" max="100">
+      <label>Farm Equipment</label>
+      <select multiple>
+        <option>Tractor</option><option>Plough</option><option>Irrigation Pump</option><option>Harvester</option>
+      </select>
+      <label>Upload Land Document</label><input type="file">
+      <label>Portal Access Password</label><input type="password">
+      <label>Problems Faced (optional)</label>
+      <textarea rows="4" placeholder="Any issues, difficulties, or support needed..."></textarea>
+      <div style="text-align:center;"><button type="submit">Submit Registration</button></div>
+    </form>
+  </div>
+</body>
+</html>
